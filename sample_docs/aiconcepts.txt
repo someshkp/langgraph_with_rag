@@ -1,0 +1,9 @@
+AI is transforming industries by enabling automation and intelligent decision making.
+
+Machine learning algorithms analyze large datasets to identify patterns and improve predictions.
+
+Deep learning models such as neural networks are used in image recognition and NLP tasks.
+
+Natural language processing allows machines to understand human language and context.
+
+Computer vision helps systems interpret and act on visual data from the real world.

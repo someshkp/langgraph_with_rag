@@ -1,0 +1,17 @@
+[project]
+name = "langgraph-with-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "faiss-cpu>=1.13.2",
+    "ipykernel>=7.2.0",
+    "langchain>=1.2.15",
+    "langchain-community>=0.4.1",
+    "langchain-google-genai>=4.2.2",
+    "langchain-groq>=1.1.2",
+    "langgraph>=1.1.6",
+    "python-dotenv>=1.2.2",
+    "streamlit>=1.56.0",
+]
