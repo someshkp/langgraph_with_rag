@@ -19,6 +19,19 @@ INDEX_DIR = "faiss_index"
 
 load_dotenv()
 
+# Streamlit Cloud Robustness: Fallback to st.secrets if env vars are missing
+try:
+    import streamlit as st
+    if "GROQ_API_KEY" in st.secrets:
+        os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+    if "GOOGLE_API_KEY" in st.secrets:
+        os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+except ImportError:
+    pass
+except Exception:
+    # Handle cases where st.secrets might be accessed outside of a streamlit app
+    pass
+
 
 class MessageState(TypedDict):
     messages: Annotated[list[AnyMessage], operator.add]
