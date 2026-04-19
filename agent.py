@@ -52,7 +52,7 @@ def search_docs(query:str)->str:
 tools= [add, multiply, Divide, search_docs]
 tools_by_name = {t.name:t for t in tools}
 
-model = ChatGroq(model="openai/gpt-oss-20b")
+model = ChatGroq(model="llama-3.1-8b-instant")
 model_with_tools = model.bind_tools(tools)
 
 def llm_call(state:MessageState)->dict:
